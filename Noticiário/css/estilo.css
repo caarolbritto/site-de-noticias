@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*background: white url(../Imagens/capa2.png) repeat-x;*/
+    background-position: 400px;
+    background-size: 500px;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo{
+    height: 10px;;
+    padding-top: 40px;
+}
+
+.topo{
+    width: 152px;
+    height: 66px;
+}
+
+a:link, a:visited {
+    color: #e04492;
+    padding: 2px;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul { /*seleciona o id topo e a lista*/
+    margin-top: 30px;
+    background: #c13379;
+    float: left; /*se tirar o topo perde a cor de fundo*/
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../Imagens/divisor.png) no-repeat left center;
+}
+ #topo ul .primeiro a {
+    background: none;
+ }
+
+ #topo ul a:hover {
+    color: #e1d3e7;
+ }
+
+ body.home #navegacao a#home {
+    color: #fff;
+    background: #e04492;
+    cursor: text;
+ }
+
+ /*formatar o conteudo/layout de três colunas*/
+
+ #conteudo {
+    margin-top: 60px;
+    background-color: #c13379;
+ }
+
+ #lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+ }
+
+ /*#tres-colunas #primario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+ }*/
+
+ #primario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+ }
+
+ #duas-colunas #primario {
+    width: 555px;
+    /*float: left;
+    margin: 0 0 20px 190px; /*margem superior 0, margem lateral direita 0, margem inferior 20, margem esquerda 190*/
+    /*background: azure;*/
+ }
+ #uma-coluna #primario {
+    width: 750px;
+    /*float: left;*/
+    margin: 0 0 20px 0;
+ }
+
+ #secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+ }
+
+ #lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+ }
+/*caixa conteudo*/
+.caixa {
+    margin: 10px 0;
+    padding: 5px; /* 0 5px 0 - superior - lateral - inferior - lateral*/
+    background: #f3f3f3 url(../Imagens/fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    background: #c13379;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*conteudos laterais*/
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none; /*tirar o símbolo de underline */
+    border-bottom: 1px solid #f3f3f3;
+}
+
+/*formulario lateral*/
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #c13379;
+    background-color: #e1d3e7;
+    border: 2px solid #c13379;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(../Imagens/marcador.png) no-repeat left center;
+    padding-left: 20px; /*para tirar a imagem do marcador de cima do nome*/
+    color: #c13379; /*mudar a cor ao passar o mouse por cima */
+}
+
+/*conteudo principal*/
+/*img {
+    border: 2px solid #dfdfdf; } /*formatação pradrão das imagens*/
+
+
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf; /*formatação mais específica da imagem*/
+}
+
+/*cabeçalhos*/
+h3 {
+    text-transform: uppercase; /*deixa as letras tudo maiúsculas*/
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #e1d3e7;
+    color: #000;
+}
+
+.covid h3 {
+    background: #e1d3e7;
+    color: #000;
+}
+
+/*notícias mundo*/
+#lista-mundo li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-mundo li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-mundo li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    background: #e1d3e7;
+    color: #000;
+}
+
+#lista-mundo li a p {
+    font-size: 0.8em;
+}
+
+#lista-mundo li a p {
+    font-size: 0.8em;
+}
+
+#lista-mundo li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+/*#lista-mundo li a {
+    text-decoration: none;;
+}*/
+
+/*rodape*/ 
+ #container-rodape {
+    background-color: #c13379;
+    padding: 20px;
+ }
+
+ #rodape {
+    width: 750px;
+    margin: 0 auto; 
+    font-style: italic;
+    color: #fff;
+ }
+
